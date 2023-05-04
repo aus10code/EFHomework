@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFConsoleUI", "EFConsoleUI\EFConsoleUI.csproj", "{0E1EE8FB-0439-4D48-8681-A86CB6D1DA3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFMigrationEmployerLibrary", "EFMigrationEmployerLibrary\EFMigrationEmployerLibrary.csproj", "{52E2830E-61ED-434E-81C0-7C231F84CA6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E1EE8FB-0439-4D48-8681-A86CB6D1DA3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E1EE8FB-0439-4D48-8681-A86CB6D1DA3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E1EE8FB-0439-4D48-8681-A86CB6D1DA3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E1EE8FB-0439-4D48-8681-A86CB6D1DA3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52E2830E-61ED-434E-81C0-7C231F84CA6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E2830E-61ED-434E-81C0-7C231F84CA6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E2830E-61ED-434E-81C0-7C231F84CA6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E2830E-61ED-434E-81C0-7C231F84CA6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
