@@ -9,32 +9,24 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Hosting.WindowsServices;
 using Microsoft.AspNetCore.Hosting.WindowsServices;
+using Microsoft.EntityFrameworkCore.Design;
 
 
 public class Program
 {
-    public static void Main(string[] args)
-    {
-        //CreateHostBuilder(args).Build().Run();
+    public static void Main(string[] args) => CreateHostBuilder(args).Build().Run();
 
-        Host.CreateDefaultBuilder(args)
+    public static IHostBuilder CreateHostBuilder(string[] args)
+        => Host.CreateDefaultBuilder(args)
+            .ConfigureWebHostDefaults(
+                webBuilder => webBuilder.UseStartup<Startup>())
             .UseWindowsService()
-            .UseSystemd()
-            .ConfigureWebHostDefaults(webbuilder =>
-            {
-                //Configure here your WebHost. For example Startup;
-                webbuilder.UseStartup<Startup>();
-            });
-    }
+            .UseSystemd();
 }
-
 
 public class Startup
 {
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddDbContext<EmployerContext>(options => options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=EFEmployerDB;Trusted_Connection=True;"));
-    }
+    public void ConfigureServices(IServiceCollection services) => services.AddDbContext<EmployerContext>(options => options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=EFEmployerDB;Trusted_Connection=True;"));
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {

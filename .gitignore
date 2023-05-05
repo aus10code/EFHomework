@@ -2,3 +2,7 @@
 EFConsoleUI/obj
 EFMigrationEmployerLibrary/bin
 EFMigrationEmployerLibrary/obj
+obj
+.vs/EntityFramework-Homework-1/v17/.suo
+*.vsidx
+.vs/EntityFramework-Homework-1/FileContentIndex/read.lock
