@@ -6,3 +6,5 @@ obj
 .vs/EntityFramework-Homework-1/v17/.suo
 *.vsidx
 .vs/EntityFramework-Homework-1/FileContentIndex/read.lock
+.idea
+.vs
